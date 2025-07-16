@@ -17,3 +17,8 @@ let o = {
 
 console.log(o)
 o.salary = "100crores";
+console.log(o)
+o.salary = "400crores";
+
+
+document.title = "Hey I am Good"
