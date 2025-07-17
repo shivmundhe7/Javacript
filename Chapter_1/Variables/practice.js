@@ -21,9 +21,15 @@
 
 
 
+
 // Problem 3 Create a const objul in javasirift Can you changit to hold a number later
 
-naav = "Sky Shiv";
-age = 20;
+// naav = "Sky Shiv";
+// age = 20;
 
-console.log("Name is " + naav +", the age is " +age);
+// console.log("Name is " + naav +", the age is " +age);
+
+
+
+
+
