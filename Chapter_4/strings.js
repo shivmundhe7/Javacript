@@ -1,6 +1,6 @@
 console.log("This is Strings Tutorial")
 
-let a = "Shiv"
+let a = "Shivsh"
 console.log(a[0])
 console.log(a[1])
 console.log(a[2])
@@ -15,7 +15,7 @@ console.log(`His name is ${real_name} and his firend name is ${friend}`)
 
 let b = "Sangam"
 console.log(b.toUpperCase())
-console.log(b.toLowerCase())
+console.log(b.toLowerCase)
 console.log(b.length)
 console.log(b.slice(1,4))
 
