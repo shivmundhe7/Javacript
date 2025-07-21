@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Color Using DOM</title>
+</head>
+<script src="/Chapter_6/exercise.js"></script>
+<style>
+        .box{
+        height: 45px;
+        width: 30px;
+        border: 2px solid black;
+        margin: 5px;
+        padding: 5px;
+        }
+</style>
+<body>
+    
+    <div class="container">
+        <div id="box1" class="box">box1</div>
+        <div id="box2" class="box">box2</div>
+        <div id="box3" class="box">box3</div>
+        <div id="box4" class="box">box4</div>
+        <div id="box5" class="box">box5</div>
+    </div>
+
+</body>
+<script>
+    document.getElementById("box1").style.backgroundColor = "red"
+    document.getElementById("box2").style.backgroundColor = "Pink"
+    document.getElementById("box3").style.backgroundColor = "yellow"
+    document.getElementById("box4").style.backgroundColor = "black"
+    document.getElementById("box5").style.backgroundColor = "Green"
+    document.body.style.backgroundColor = "blue"
+
+</script>
+</html>
