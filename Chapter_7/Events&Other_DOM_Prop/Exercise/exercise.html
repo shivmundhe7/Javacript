@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>YouTube Video</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      padding: 20px;
+      background-color: #f0f0f0;
+    }
+
+    .video-card {
+      width: 300px;
+      background-color:a #ffffff;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      overflow: hidden;
+    }
+
+    .thumbnail {
+      position: relative;
+    }
+
+    .thumbnail img {
+      width: 100%;
+      display: block;
+    }
+
+    .duration {
+      position: absolute;
+      bottom: 8px;
+      right: 8px;
+      background-color: rgba(0,0,0,0.75);
+      color: white;
+      padding: 2px 6px;
+      font-size: 12px;
+      border-radius: 4px;
+    }
+
+    .video-info {
+      padding: 10px;
+    }
+
+    .title {
+      font-size: 16px;
+      margin: 4px 0;
+    }
+
+    .meta {
+      font-size: 14px;
+      color: #666;
+    }
+  </style>
+</head>
+<body>
+  <div class="video-card">
+    <div class="thumbnail">
+      <img src="/Chapter_7/Events&Other_DOM_Prop/Exercise/hq720.avif" alt="Video Thumbnail">
+      <span class="duration">12:45</span>
+    </div>
+    <div class="video-info">
+      <h3 class="title">Title Goes Here</h3>
+      <p class="meta">Views and Time</p>
+    </div>
+  </div>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", function() {
+      const videos = [
+        {
+          title: "Build a Dynamic Website",
+          views: "450K views",
+          time: "2 hours ago",
+          duration: "12:34",
+          thumbnail: "hq720.avif" // make sure this image is in your project folder
+        }
+      ];
+
+      const info = videos[0];
+      const container = document.querySelector('.video-card');
+      container.querySelector('.title').textContent = info.title;
+      container.querySelector('.meta').textContent = `${info.views} • ${info.time}`;
+      container.querySelector('.thumbnail img').src = info.thumbnail;
+      container.querySelector('.duration').textContent = info.duration;
+    });
+  </script>
+</body>
+</html>
