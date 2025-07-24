@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Hacking Simulator</title>
+  <style>
+    body {
+      background-color: rgb(70, 143, 70);
+      color: #000;
+      font-family: 'Courier New', Courier, monospace;
+      padding: 20px;
+      font-size: 20px;
+      font-weight: 1000;
+    }
+
+    .message {
+      margin-bottom: 10px;
+    }
+
+    .blinking {
+      display: inline-block;
+      animation: blink 1s infinite;
+    }
+
+    @keyframes blink {
+      0% { opacity: 0; }
+      50% { opacity: 1; }
+      100% { opacity: 0; }
+    }
+  </style>
+</head>
+<body>
+  <div id="terminal"></div>
+    <script src="/Chapter_10/Aync_and_fetchAPI/Exercise/index.js"></script>
+</body>
+</html>
