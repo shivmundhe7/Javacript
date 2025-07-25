@@ -1,0 +1,16 @@
+// async function sleep (){
+//     return new Promise((resolve,reject)=>{
+//         setTimeout(()=>{
+//             resolve(45)
+//         },1000);
+//     })
+// }
+// (async function main() {
+//     let a = await sleep()
+//     console.log(a)
+//     let b = await sleep()
+//     console.log(b);
+// })
+
+let [x,y, ...rest] = [1,5,7,1,4]
+console.log(x,y,rest)
